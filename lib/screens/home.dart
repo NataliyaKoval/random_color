@@ -21,8 +21,9 @@ class _HomeState extends State<Home> {
       ),
       body: GestureDetector(
         onTap: changeBackgroundColor,
-        child: Container(
+        child: AnimatedContainer(
           color: backgroundColor,
+          duration: const Duration(milliseconds: 300),
           child: const Center(
             child: Text(
               'Hey there',

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:random_color/screens/Home.dart';
+import 'package:random_color/screens/home.dart';
 
 /// The root of the application.
 class App extends StatelessWidget {
