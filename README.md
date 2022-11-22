@@ -1,12 +1,9 @@
-# flutter_project_template
-📖 Template for flutter projects using solid_lints, CI for tests and analysis.
+# Random Color
+📖 A simple Flutter application.
 
-- Uses latest stable flutter
-- Repo name as your project name
-- Organization from your profile email address or default
+It has Home screen with a Text widget in the middle.
 
-# Usage
-1. Press "Use this template" on the menu.
-2. Fill Github form with your new repo name and press "Create repository from template"
-3. Wait for it to be created and set up action is complete. In a couple of minutes, you'll see the flutter project created in your repo once Github Actions are complete.
-4. Clone and code.
+Home screen changes its background color to random color after tapping. Animation duration is 300 milliseconds.
+
+![photo_2022-11-22_14-27-03](https://user-images.githubusercontent.com/69919727/203326064-bb785910-9e49-40ce-bf13-d094852d8840.jpg)
+![photo_2022-11-22_14-30-34](https://user-images.githubusercontent.com/69919727/203326514-7506fbff-02ed-4b6a-aee3-e772ed5f6fb2.jpg)
