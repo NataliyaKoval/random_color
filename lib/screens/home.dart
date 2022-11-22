@@ -3,14 +3,22 @@ import 'package:random_color/utils/colors_util.dart';
 
 /// The home page of the application.
 class Home extends StatefulWidget {
+  /// Generates random color
+  final ColorsUtil colorsUtil;
+
   /// Default constructor
-  const Home({Key? key}) : super(key: key);
+  const Home({
+    Key? key,
+    this.colorsUtil = const ColorsUtil(),
+  }) : super(key: key);
 
   @override
-  State<Home> createState() => _HomeState();
+  State<Home> createState() => HomeState();
 }
 
-class _HomeState extends State<Home> {
+/// Home state
+class HomeState extends State<Home> {
+  /// Background color of the Home screen
   Color backgroundColor = Colors.lightBlue;
 
   @override
@@ -37,9 +45,10 @@ class _HomeState extends State<Home> {
     );
   }
 
+  /// Changes background color of the Home screen
   void changeBackgroundColor() {
     setState(() {
-      backgroundColor = ColorsUtil.getRandomColor();
+      backgroundColor = widget.colorsUtil.getRandomColor();
     });
   }
 }

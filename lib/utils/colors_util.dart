@@ -6,8 +6,11 @@ import 'package:flutter/material.dart';
 class ColorsUtil {
   static const _maxColorHexCodeInclusive = 0x100000000;
 
+  /// Default constructor
+  const ColorsUtil();
+
   /// Generates random color
-  static Color getRandomColor() {
+  Color getRandomColor() {
     return Color(Random().nextInt(_maxColorHexCodeInclusive));
   }
 }
